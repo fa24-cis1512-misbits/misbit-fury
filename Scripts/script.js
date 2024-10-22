@@ -163,13 +163,17 @@ const story = [
 
 ];
 
+let currentStoryIndex = 0;
+
 //start the game
 function startGame() {
     showStoryNode(0);  //first story node
 }
 
+
 //update the story text
 function showStoryNode(index) {
+    currentStoryIndex = index;
     const node = story[index];
     document.getElementById('story-text').innerText = node.text;
     
@@ -178,21 +182,21 @@ function showStoryNode(index) {
     document.getElementById('choice1').style.display = 'inline-block';  //make sure it is visible
 
     //update second button text or hide
+
     if (node.choices[1]) {
         document.getElementById('choice2').innerText = node.choices[1].text;
         document.getElementById('choice2').style.display = 'inline-block';  
     } else {
         document.getElementById('choice2').style.display = 'none';  //hide the second button if only one choice
     }
+
 }
 
 //function to handle choice
 function makeChoice(choiceIndex) {
-    const currentStory = document.getElementById('story-text').innerText;
-    const currentNode = story.find(node => node.text === currentStory);
 
+    const nextNodeIndex = story[currentStoryIndex].choices[choiceIndex - 1].next;
     //move to next story node
-    const nextNodeIndex = currentNode.choices[choiceIndex - 1].next;
     showStoryNode(nextNodeIndex);
 }
 
