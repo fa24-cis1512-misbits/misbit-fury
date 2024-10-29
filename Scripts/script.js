@@ -7,13 +7,14 @@ const story = [
             { text: "Investigate the map further?", next: 1 },
             { text: "Ignore the map and take a nap instead.", next:12 }
 
-        ]
-
         ],
         image: "images/ch0-attic.png"
+    },   
+        
+        
         
 
-    },
+    
     // 1
     {
         text: "You spread out the crumpled parchment and study it carefully. The map shows the way to Bloodstone Island, with a note at the bottom that reads: “Seek ye the Devil’s Claw Cave.” Your heart pounds with excitement. Could the tales of Captain Blackpaw’s treasure be true?  ",
@@ -21,12 +22,13 @@ const story = [
             { text: "Show the map to your friends and form a crew.", next: 2 },
             { text: "Head out to Bloodstone Island on your own", next: 3 }
 
-        ]
-
         ],
         image: "images/ch1-map.png"
 
-    },
+    },  
+        
+
+    
     // 2
     {
         text: "You decide this adventure is too big to tackle alone. You dash through Driftwood, gathering your crew: Scraps, the one-eyed alley cat; Whiskers, the fast-talking raccoon; and Shadow, the mysterious black cat. Together, you study the map in your hideout at the old lighthouse. “We’ll need a boat,” Shadow says. “And we’ll need to leave at first light.” ",
@@ -34,9 +36,7 @@ const story = [
             { text: " Steal a boat from the dock and set sail at dawn.", next: 4 },
             { text: "Wait until nightfall to sneak out and avoid being seen.", next: 5 }
 
-        ]
-
-        ], 
+        ],
         image:"images/image1.png"
         
 
