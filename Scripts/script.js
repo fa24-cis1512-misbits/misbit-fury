@@ -6,7 +6,9 @@ const story = [
         choices: [
             { text: "Investigate the map further?", next: 1 },
             { text: "Ignore the map and take a nap instead.", next:12 }
-        ]
+        ],
+        image: "images/image1.jpg"
+        
     },
     // 1
     {
@@ -14,7 +16,8 @@ const story = [
         choices: [
             { text: "Show the map to your friends and form a crew.", next: 2 },
             { text: "Head out to Bloodstone Island on your own", next: 3 }
-        ]
+        ],
+        image:"images/image2.jpg"
     },
     // 2
     {
@@ -23,6 +26,7 @@ const story = [
             { text: " Steal a boat from the dock and set sail at dawn.", next: 4 },
             { text: "Wait until nightfall to sneak out and avoid being seen.", next: 5 }
         ]
+        
     },
     // 3
     {
@@ -172,6 +176,11 @@ function startGame() {
 function showStoryNode(index) {
     const node = story[index];
     document.getElementById('story-text').innerText = node.text;
+
+    //set image
+    document.getElementById("displayImage").src = node.image;
+
+    //document.getElementById("displayImage") = imagePath;
     
     //update the first button text
     document.getElementById('choice1').innerText = node.choices[0].text;
