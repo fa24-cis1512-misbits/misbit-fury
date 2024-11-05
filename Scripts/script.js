@@ -37,7 +37,7 @@ const story = [
             { text: "Wait until nightfall to sneak out and avoid being seen.", next: 5 }
 
         ],
-        image:"images/image1.png"
+        image:"images/ch2-theCrew.webp"
         
 
     },
@@ -47,7 +47,8 @@ const story = [
         choices: [
             { text: "You make it to Bloodstone Island, but you’re exhausted", next: 6 },
             { text: "A sudden storm hits, and you’re thrown off course" , next: 7 }
-        ]
+        ],
+        image:"images/ch3-goAlone.webp"
     },
     // 4
     {
@@ -55,7 +56,8 @@ const story = [
         choices: [
             { text: "Approach the cave cautiously. ", next: 8 },
             { text: "Charge into the cave, eager to find the treasure.", next: 9 }
-        ]
+        ],
+        image:"images/ch4-setSail.webp"
     },
     // 5
     {
@@ -63,7 +65,8 @@ const story = [
         choices: [
             { text: "Land on the beach and make camp for the night.", next: 10 },
             { text: "Enter the cave immediately, despite the late hour.", next: 9 }
-        ]
+        ],
+        image:"images/ch5-theApproach.webp"
     },
     // 6
     {
