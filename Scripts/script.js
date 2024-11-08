@@ -195,16 +195,16 @@ function showStoryNode(index) {
     document.getElementById('story-text').innerText = node.text;
     
     //update the first button text
-    document.getElementById('choice1').innerText = node.choices[0].text;
-    document.getElementById('choice1').style.display = 'inline-block';  //make sure it is visible
+    document.getElementById('choiceA').innerText = node.choices[0].text;
+    document.getElementById('choiceA').style.display = 'inline-block';  //make sure it is visible
 
     //update second button text or hide
 
     if (node.choices[1]) {
-        document.getElementById('choice2').innerText = node.choices[1].text;
-        document.getElementById('choice2').style.display = 'inline-block';  
+        document.getElementById('choiceB').innerText = node.choices[1].text;
+        document.getElementById('choiceB').style.display = 'inline-block';  
     } else {
-        document.getElementById('choice2').style.display = 'none';  //hide the second button if only one choice
+        document.getElementById('choiceB').style.display = 'none';  //hide the second button if only one choice
     }
 
 }
