@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choose Your Own Adventure</title>
-    <link rel="stylesheet" href="Styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+      <script src = "js/main.js" ></script >
+      <script src = "js/controller.js" ></script >
+  </head>
+  <body>
+
     <div class="game-container">
-        <div id="story-box">
-            <p id="story-text"></p>
-        </div>
-        <div class="buttons">
-            <button id="choice1" onclick="makeChoice(1)">Choice 1</button>
-            <button id="choice2" onclick="makeChoice(2)">Choice 2</button>
-        </div>
+      <div id="story-box">
+        <p id="storyboard"></p>
+      </div>
+      <div class="buttons">
+        <button id="optionA" onclick="option(1)">A</button>
+        <button id="optionB" onclick="option(2)">B</button>
+        <button id="optionC" onclick="option(3)">Restart?</button>
+      </div>
     </div>
 
-    <script src="Scripts/script.js"></script>
-</body>
+    <script src="js/storyboard.js"></script>
+  </body>
 </html>
-
