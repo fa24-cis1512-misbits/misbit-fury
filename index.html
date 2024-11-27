@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choose Your Own Adventure</title>
-    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src = "js/main.js" ></script >
   </head>
   <body>
 
     <div class="game-container">
       <div id="story-box">
-        <p id="story-text"></p>
+        <p id="storyboard"></p>
       </div>
       <div class="buttons">
-        <button id="choice1" onclick="makeChoice(1)">A</button>
-        <button id="choice2" onclick="makeChoice(2)">B</button>
+        <button id="optionA" onclick="option(1)">A</button>
+        <button id="optionB" onclick="option(2)">B</button>
       </div>
     </div>
 
-    <script src="Scripts/script.js"></script>
   </body>
 </html>
