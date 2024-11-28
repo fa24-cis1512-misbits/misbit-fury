@@ -198,3 +198,5 @@ const story = [
     image: 'images/image21.png',
   },
 ];
+
+export {story};

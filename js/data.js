@@ -2,7 +2,6 @@ const IMAGE_PATHS = {
   attic: 'images/ch0-attic.png',
   map: 'images/ch1-map.png',
   lighthouse: 'images/image1.png',
-  // Add more entries as needed
 };
 
 const createOption = (text, next) => ({text, next});
@@ -13,7 +12,7 @@ const createStoryStep = (text, options, image = null) => ({
   image,
 });
 
-const story = [
+export const story = [
   createStoryStep(
       'It’s a blistering hot summer in Driftwood, a sleepy seaside town where nothing ever happens. ' +
       'You’re Stede, a scrappy cat with a knack for finding trouble. ' +

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story Game</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+<div class="game-container">
+    <div id="story-window" class="window">
+        <h1>Story</h1>
+        <div id="storyboard">Story will appear here...</div>
+    </div>
+
+    <div id="options-window" class="window">
+        <h1>Options</h1>
+        <div id="options">
+            <button id="optionA" style="display:none;">Option A</button>
+            <button id="optionB" style="display:none;">Option B</button>
+        </div>
+    </div>
+
+    <div class="controller">
+        <button id="selectOptionA" onclick="handleOptionSelection(1)">Select Option A</button>
+        <button id="selectOptionB" onclick="handleOptionSelection(2)">Select Option B</button>
+    </div>
+</div>
+
+<script type="module" src="js/game_logic.js"></script>
+</body>
+</html>
