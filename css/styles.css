@@ -1,4 +1,5 @@
 @import url(story_controller_styles.css);
+
 body {
     font-family: "Arial", sans-serif;
     background-color: #0c3d52; /* Deep Ocean Blue */
@@ -9,55 +10,63 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
 }
 
 .game-container {
-    width: 700px;
+    width: 100%;
+    max-width: 450px;
     margin: 20px;
     padding: 20px;
     background-color: #2e2e2e; /* Stormy Grey */
     border: 2px solid #b8860b; /* Treasure Gold */
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .window {
-    padding: 20px;
+    padding: 15px;
     background-color: #2e2e2e; /* Stormy Grey */
     border-radius: 10px;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #b8860b; /* Treasure Gold */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 #storyboard {
     margin-top: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: "Georgia", serif;
     color: #f0e68c; /* Sail White */
 }
 
+.options-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .controller {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 button {
     background-color: #b8860b; /* Treasure Gold */
     color: #f4f4f4;
     border: 2px solid #8b4513; /* Dark Ship Brown */
-    padding: 10px 20px;
+    padding: 10px;
     cursor: pointer;
     border-radius: 360px;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -67,7 +76,34 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
-button:active
-{
+button:active {
     transform: scale(0.95);
+}
+
+@media (min-width: 768px) {
+    .game-container {
+        max-width: 700px;
+    }
+
+    .options-controls {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .controller {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #storyboard {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
 }
