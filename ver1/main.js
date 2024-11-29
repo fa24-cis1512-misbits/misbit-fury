@@ -1,4 +1,4 @@
-import { story } from './story_adventure_data.js';
+import { story } from 'ver1/story_adventure_data.js';
 
 let currentStoryIndex = 0;
 

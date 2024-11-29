@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /*background-color: #0c1c3d; !* Deep ocean blue *!*/
+    background-color: rgba(0,0,0,1);
+    color: #f4f4f4; /* Light parchment text color */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2b2b2b; /* Dark pirate ship color */
+    /*border: 2px solid #deb887; !* Border resembling an old treasure map *!*/
+    border: 2px solid #deb887; /* Border resembling an old treasure map */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    text-align: center; /* Center the text */
+}
+
+#story-box {
+    background-color: #404040; /* Darker grey for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#story-text {
+    font-size: 1.2em;
+    font-family: 'Georgia', serif; /* A more old-world style */
+    color: #f0e68c; /* Golden text resembling treasure */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #b8860b; /* Golden button color */
+    color: #f4f4f4;
+    border: 2px solid #8b4513; /* Dark brown border for a pirate touch */
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 360px; /* Rounded buttons for a softer look */
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+button:hover {
+    background-color: #8b4513; /* Darker brown on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow when hovering */
+}
+
+button:active {
+    transform: scale(0.95); /* Button press effect */
+}
+
+h1 {
+    font-size: 2em;
+    color: #b8860b; /* Gold accent for headings */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for a dramatic effect */
+}
+

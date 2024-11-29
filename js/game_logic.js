@@ -6,14 +6,14 @@ const optionAEl = document.getElementById('optionA');
 const optionBEl = document.getElementById('optionB');
 
 function startGame() {
-  showStoryNode(0); // Correcting the typo to match the function name
+  showStoryNode(0);
 }
 
 function showStoryNode(index) {
   if (story[index]) {
     currentStoryIndex = index;
     const node = story[index];
-    storyboardEl.innerText = node.text; // Use the constant
+    storyboardEl.innerText = node.text;
 
     updateButton(optionAEl, node.option[0]);
     updateButton(optionBEl, node.option[1]);
@@ -32,8 +32,22 @@ function updateButton(button, option) {
 }
 
 function handleOptionSelection(optionIndex) {
-  showStoryNode(story[currentStoryIndex].option[optionIndex - 1].next);
+  if (story[currentStoryIndex] && story[currentStoryIndex].option[optionIndex - 1]) {
+    showStoryNode(story[currentStoryIndex].option[optionIndex - 1].next);
+  } else {
+    console.error("Invalid option selection");
+  }
 }
+
+// Listen for both arrow keys and 'A'/'B' keys for selecting options
+document.addEventListener('keydown', (event) => {
+  const key = event.key.toLowerCase();
+  if (key === 'arrowleft' || key === 'a') {
+    handleOptionSelection(1); // Option A
+  } else if (key === 'arrowright' || key === 'b') {
+    handleOptionSelection(2); // Option B
+  }
+});
 
 // Make the handleOptionSelection function accessible globally
 window.handleOptionSelection = handleOptionSelection;

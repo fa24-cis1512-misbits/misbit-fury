@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Arial", sans-serif;
+    background-color: #0c3d52; /* Deep Ocean Blue */
+}
+
+.background-gif-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.background-gif-container iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.game-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.story-window {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.options-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.window {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.controller button {
+    background-color: #b8860b; /* Treasure Gold */
+    color: #f4f4f4;
+    border: 2px solid #8b4513; /* Dark Ship Brown */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 360px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
+
+.controller button:hover {
+    background-color: #8b4513; /* Dark Ship Brown */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.controller button:active {
+    transform: scale(0.95);
+}

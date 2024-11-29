@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Choose Your Own Adventure</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-    <div class="game-container">
-      <div id="story-box">
-        <p id="storyboard"></p>
-      </div>
-      <div class="buttons">
-        <button id="optionA" onclick="option(1)"></button>
-        <button id="optionB" onclick="option(2)"></button>
-      </div>
+<!-- Tenor GIF Container -->
+<div class="background-gif-container">
+    <div class="tenor-gif-embed" data-postid="17135340" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+        <a href="https://tenor.com/view/cat-face-with-pirate-hat-cat-joypixels-pirate-pirate-hat-gif-17135340">Cat Face With Pirate Hat Joypixels Sticker</a> from
+        <a href="https://tenor.com/search/cat+face+with+pirate+hat-stickers">Cat Face With Pirate Hat Stickers</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</div>
+
+<!-- Game Container -->
+<div class="game-container">
+    <!-- Story Window -->
+    <div class="story-window">
+        <h1>Scenario</h1>
+        <div id="storyboard"></div>
     </div>
 
-    <script type="module" src = "js/main.js" ></script >
-  </body>
+    <!-- Options and Controls -->
+    <div class="options-controls">
+        <!-- Options Window -->
+        <div class="window" id="options-window">
+            <h1>Choose Your Adventure: </h1>
+            <div id="options">
+                <button id="optionA" style="display:none;">Option A</button>
+                <button id="optionB" style="display:none;">Option B</button>
+            </div>
+        </div>
+
+        <!-- Controller Window -->
+        <div class="window controller-window">
+            <h2>Controls</h2>
+            <div class="controller">
+                <button id="selectOptionA" onclick="handleOptionSelection(1)">Select Option A</button>
+                <button id="selectOptionB" onclick="handleOptionSelection(2)">Select Option B</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="js/game_logic.js"></script>
+</body>
 </html>
