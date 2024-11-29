@@ -49,6 +49,10 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+// Add touch event listeners for mobile devices
+optionAEl.addEventListener('touchstart', () => handleOptionSelection(1));
+optionBEl.addEventListener('touchstart', () => handleOptionSelection(2));
+
 // Make the handleOptionSelection function accessible globally
 window.handleOptionSelection = handleOptionSelection;
 
