@@ -151,7 +151,7 @@ const story = [
     option: [
       { text: 'Continue down the secret passage.', next: 19 },
     ],
-    image: 'images/image15.png',
+    image: 'images/ch16-pullTheLever.webp',
   },
   { // 17
     text: 'Facing the ghostly figure of Captain Blackpaw, you stand your ground. “We come in peace,” you declare, “and seek only the treasure!” The ghost regards you for a moment before a smile breaks across his spectral face. ' +
