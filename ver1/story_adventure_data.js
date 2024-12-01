@@ -108,7 +108,7 @@ const story = [
       { text: 'Pull the lever and see what happens.', next: 16 },
       { text: 'Ignore the lever and keep moving.', next: 9 },
     ],
-    image: 'images/image10.png',
+    image: 'images/theLever.webp',
   },
   { // 12
     text: 'You decide that treasure hunting is too much work, and besides, your spot in the sun is too comfy to leave. ' +
