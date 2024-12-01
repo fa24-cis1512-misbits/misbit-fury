@@ -71,7 +71,7 @@ const story = [
     option: [
       { text: 'Play again?', next: 0 },
     ],
-    image: 'images/image6.png',
+    image: 'images/ch7-theEnd.webp',
   },
   { // 8
     text: 'You and your crew approach the Devil’s Claw Cave with caution, pushing aside the thorny vines that guard its entrance. ' +
