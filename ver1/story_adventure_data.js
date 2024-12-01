@@ -34,7 +34,7 @@ const story = [
       { text: 'You make it to Bloodstone Island, but you’re exhausted.', next: 6 },
       { text: 'A sudden storm hits, and you’re thrown off course.', next: 7 },
     ],
-    image: 'images/image2.png',
+    image: 'images/ch3-goAlone.webp',
   },
   { // 4
     text: 'At dawn, your crew sets off in the rowboat. The sea is calm, but an eerie fog hangs over the water. ' +
@@ -44,7 +44,7 @@ const story = [
       { text: 'Approach the cave cautiously.', next: 8 },
       { text: 'Charge into the cave, eager to find the treasure.', next: 9 },
     ],
-    image: 'images/image3.png',
+    image: 'images/ch4-setSail.webp',
   },
   { // 5
     text: 'You wait until nightfall to avoid being seen by the townsfolk. The sea is calm as you and your crew row towards Bloodstone Island under the cover of darkness. ' +
@@ -53,7 +53,7 @@ const story = [
       { text: 'Land on the beach and make camp for the night.', next: 10 },
       { text: 'Enter the cave immediately, despite the late hour.', next: 9 },
     ],
-    image: 'images/image4.png',
+    image: 'images/ch5-theApproach.webp',
   },
   { // 6
     text: 'You reach Bloodstone Island, but rowing all the way on your own has left you exhausted. ' +
@@ -62,7 +62,7 @@ const story = [
       { text: 'Rest for a while and regain your strength.', next: 11 },
       { text: 'Push forward into the cave despite your fatigue.', next: 9 },
     ],
-    image: 'images/image5.png',
+    image: 'images/tired.webp',
   },
   { // 7
     text: 'As you row, a sudden storm blows in from the north, tossing your boat around like a toy. ' +
