@@ -166,7 +166,7 @@ const story = [
     option: [
       { text: 'Play again', next: 0 },
     ],
-    image: 'images/image17.png',
+    image: 'images/ch18-runForLife.webp',
   },
   { // 19
     text: 'The secret passage leads you deeper into the cave, where you find another chamber filled with even more treasure. But it’s guarded by a giant spider! You’ll need to defeat it to claim the prize.',
