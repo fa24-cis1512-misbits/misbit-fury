@@ -136,7 +136,7 @@ const story = [
     option: [
       { text: 'Play again', next: 0 },
     ],
-    image: 'images/image13.png',
+    image: 'images/ch14-deathByDarts.webp',
   },
   { // 15
     text: 'You spend some time exploring the beach and find an old, half-buried chest. Inside are supplies that might come in handy on your journey. ' +
