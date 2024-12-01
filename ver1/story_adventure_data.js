@@ -99,7 +99,7 @@ const story = [
       { text: 'Explore the beach before entering the cave.', next: 15 },
       { text: 'Head straight into the cave now that it’s daylight.', next: 8 },
     ],
-    image: 'images/image9.png',
+    image: 'images/ch10-camp.webp',
   },
   { // 11
     text: 'You study the carvings on the cave walls, noticing that they depict Captain Blackpaw’s final battle and the hiding of his treasure. ' +
