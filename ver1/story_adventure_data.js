@@ -181,7 +181,7 @@ const story = [
     option: [
       { text: 'Play again', next: 0 },
     ],
-    image: 'images/image19.png',
+    image: 'images/ch20-herosReturn.webp',
   },
   { // 21
     text: 'You and your crew fight bravely and manage to defeat the giant spider. With the guardian gone, the treasure is yours for the taking!',
