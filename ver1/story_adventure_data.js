@@ -159,7 +159,7 @@ const story = [
     option: [
       { text: 'Claim the treasure.', next: 20 },
     ],
-    image: 'images/image16.png',
+    image: 'images/ch17-fightBlackpaw.webp',
   },
   { // 18
     text: 'You grab as much treasure as you can carry and make a run for it. But as you reach the exit, the cave begins to collapse. You barely escape with your life, but most of the treasure is lost.',
