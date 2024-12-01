@@ -195,7 +195,7 @@ const story = [
     option: [
       { text: 'Play again', next: 0 },
     ],
-    image: 'images/image21.png',
+    image: 'images/ch22-spiderSneak.webp',
   },
 ];
 
