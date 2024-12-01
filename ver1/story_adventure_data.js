@@ -80,7 +80,7 @@ const story = [
       { text: 'Examine the carvings for clues.', next: 11 },
       { text: 'Keep moving deeper into the cave.', next: 9 },
     ],
-    image: 'images/image7.png',
+    image: 'images/ch8-theDevilsCave.webp',
   },
   { // 9
     text: 'You press on, determined to find the treasure. The cave twists and turns, leading you deeper into the island. ' +
