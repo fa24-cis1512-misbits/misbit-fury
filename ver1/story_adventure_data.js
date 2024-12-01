@@ -116,7 +116,7 @@ const story = [
     option: [
       { text: 'Play again', next: 0 },
     ],
-    image: 'images/image11.png',
+    image: 'images/ch12-theNap.webp',
   },
   { // 13
     text: 'You and your crew work together to solve the puzzle. The pieces click into place, and the stone door rumbles open, revealing a hidden chamber. ' +
