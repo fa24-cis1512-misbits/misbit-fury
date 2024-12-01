@@ -174,7 +174,7 @@ const story = [
       { text: 'Fight the spider.', next: 21 },
       { text: 'Sneak past the spider.', next: 22 },
     ],
-    image: 'images/image18.png',
+    image: 'images/ch19-theSpider.webp',
   },
   { // 20
     text: 'With the treasure claimed, you and your crew make your way back to Driftwood as heroes. The town is abuzz with your adventure, and you are celebrated for your bravery and resourcefulness.',
