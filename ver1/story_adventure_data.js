@@ -90,7 +90,7 @@ const story = [
       { text: 'Work together to solve the puzzle.', next: 13 },
       { text: 'Try to force the door open without solving the puzzle.', next: 14 },
     ],
-    image: 'images/image8.png',
+    image: 'images/ch9-thePuzzle.webp',
   },
   { // 10
     text: 'You decide it’s best to make camp for the night. The island is dark and foreboding, and you sense that you’ll need all your strength for what lies ahead. ' +
