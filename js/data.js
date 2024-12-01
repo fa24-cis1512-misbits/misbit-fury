@@ -2,6 +2,27 @@ const IMAGE_PATHS = {
   attic: 'images/ch0-attic.png',
   map: 'images/ch1-map.png',
   lighthouse: 'images/image1.png',
+  theCrew: 'images/ch2-theCrew.webp',
+  goAlone: 'images/ch3-goAlone.webp',
+  setSail: 'images/ch4-setSail.webp',
+  theApproach: 'images/ch4-setSail.webp',
+  tired: 'images/ch6-tired.webp',
+  theEnd: 'images/ch7-theEnd.webp',
+  theDevilsCave: 'images/ch8-theDevilsCave.webp',
+  thePuzzle: 'images/ch9-thePuzzle.webp',
+  camp: 'images/ch10-camp.webp',
+  theLever: 'images/ch11-theLever.webp',
+  theNap: 'images/ch12-theNap.webp',
+  blackPawEmerges: 'images/ch13-blackPawEmerges.webp',
+  deathByDarts: 'images/ch14-deathByDarts.webp',
+  beachChest: 'images/ch15-beachChest.webp',
+  pullTheLever: 'images/ch16-pullTheLever.webp',
+  fightBlackPaw: 'images/ch17-fightBlackPaw',
+  runForLife: 'images/ch18-runForLife.webp',
+  theSpider: 'images/ch19-theSpider.webp',
+  herosReturn: 'images/ch20-heroRun.webp',
+  spiderFight: 'images/ch21-spiderFight.webp',
+  spiderSneak: 'images/ch22-spiderSneak.webp'
 };
 
 const createOption = (text, next) => ({text, next});
@@ -52,6 +73,7 @@ export const story = [
         {text: 'You make it to Bloodstone Island, but you’re exhausted', next: 6,},
         {text: 'A sudden storm hits, and you’re thrown off course', next: 7},
       ],
+      IMAGE_PATHS.setSail,
   ),
 
   createStoryStep(
@@ -62,6 +84,7 @@ export const story = [
         {text: 'Approach the cave cautiously. ', next: 8},
         {text: 'Charge into the cave, eager to find the treasure.', next: 9},
       ],
+      IMAGE_PATHS.theDevilsCave,
   ),
 
   createStoryStep(
@@ -72,6 +95,7 @@ export const story = [
         {text: 'Land on the beach and make camp for the night.', next: 10},
         {text: 'Enter the cave immediately, despite the late hour.', next: 9},
       ],
+      IMAGE_PATHS.theApproach,
   ),
 
   createStoryStep(
@@ -81,6 +105,7 @@ export const story = [
         {text: 'Rest for a while and regain your strength.', next: 11},
         {text: 'Push forward into the cave despite your fatigue. ', next: 9},
       ],
+      IMAGE_PATHS.tired,
   ),
 
   createStoryStep(
@@ -91,6 +116,7 @@ export const story = [
       [
         {text: 'Play again?', next: 0},
       ],
+      IMAGE_PATHS.theEnd,
   ),
 
   createStoryStep(
@@ -100,6 +126,7 @@ export const story = [
         {text: 'Examine the carvings for clues. ', next: 11},
         {text: 'Keep moving deeper into the cave. ', next: 9},
       ],
+      IMAGE_PATHS.theDevilsCave,
   ),
 
   createStoryStep(
@@ -111,6 +138,7 @@ export const story = [
         {text: 'Work together to solve the puzzle. ', next: 13},
         {text: 'Try to force the door open without solving the puzzle.', next: 14},
       ],
+      IMAGE_PATHS.thePuzzle,
   ),
 
   createStoryStep(
@@ -121,6 +149,7 @@ export const story = [
         {text: 'Explore the beach before entering the cave', next: 15},
         {text: 'Head straight into the cave now that it’s daylight', next: 8},
       ],
+      IMAGE_PATHS.camp,
   ),
 
   createStoryStep(
@@ -130,6 +159,7 @@ export const story = [
         {text: 'Pull the lever and see what happens.', next: 16},
         {text: 'Ignore the lever and keep moving.', next: 9},
       ],
+      IMAGE_PATHS.theLever,
   ),
 
   createStoryStep(
@@ -139,6 +169,7 @@ export const story = [
       [
         {text: 'Play again', next: 0},
       ],
+      IMAGE_PATHS.theNap,
   ),
 
   createStoryStep(
@@ -151,6 +182,7 @@ export const story = [
         {text: 'Face the ghost and claim the treasure.', next: 17},
         {text: 'Try to escape with as much treasure as you can carry.', next: 18},
       ],
+      IMAGE_PATHS.blackPawEmerges,
   ),
 
   createStoryStep(
@@ -162,6 +194,7 @@ export const story = [
       [
         {text: 'Play again', next: 0},
       ],
+      IMAGE_PATHS.thePuzzle,
   ),
 
   createStoryStep(
@@ -172,6 +205,7 @@ export const story = [
         {text: 'Take the key and head into the cave. ', next: 8},
         {text: 'Ignore the chest and head into the cave', next: 9},
       ],
+      IMAGE_PATHS.beachChest,
   ),
 
   createStoryStep(
@@ -182,6 +216,7 @@ export const story = [
         {text: 'Enter the secret chamber.', next: 19},
         {text: 'Stay on the main path to the treasure room.', next: 9},
       ],
+      IMAGE_PATHS.pullTheLever,
   ),
 
   createStoryStep(
@@ -194,6 +229,7 @@ export const story = [
       [
         {text: 'Play again?', next: 0},
       ],
+      IMAGE_PATHS.fightBlackPaw,
   ),
 
   createStoryStep(
@@ -205,6 +241,7 @@ export const story = [
       [
         {text: 'Play again?', next: 0},
       ],
+      IMAGE_PATHS.runForLife,
   ),
 
   createStoryStep(
@@ -218,6 +255,7 @@ export const story = [
         {text: 'Confront the ghost and take the treasure.', next: 17},
         {text: 'Leave the treasure and escape while you still can.', next: 18},
       ],
+      IMAGE_PATHS.blackPawEmerges,
   ),
 
 ];

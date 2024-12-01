@@ -23,6 +23,7 @@
     <div class="story-window">
         <h1>Scenario</h1>
         <div id="storyboard"></div>
+        <img id="story-image" src="" alt="Story Image" style="display: none;" />
     </div>
 
     <!-- Options and Controls -->
@@ -35,18 +36,20 @@
                 <button id="optionB" class="option-button" style="display:none;"></button>
             </div>
         </div>
-
-        <!-- Controller Window -->
-        <div class="window controller-window">
-            <h2>Keyboard Controls</h2>
-            <div class="controller">
-                <button id="selectOptionA" onclick="handleOptionSelection(1)">Tap/Press A or Left Arrow</button>
-                <button id="selectOptionB" onclick="handleOptionSelection(2)">Tap/Press B or Right Arrow</button>
-            </div>
-        </div>
     </div>
 </div>
+<!-- Controller Window -->
+<div id="controller-content"></div>
+
 
 <script type="module" src="js/game_logic.js"></script>
+<script>
+    fetch('nintendo_nes_controller.html')
+    .then(response => response.text())
+     .then(data => {
+        document.getElementById('controller-content').innerHTML = data;
+    })
+     .catch(error => console.error('Error loading HTML:', error));
+</script>
 </body>
 </html>
