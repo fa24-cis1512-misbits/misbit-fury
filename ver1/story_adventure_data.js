@@ -25,7 +25,7 @@ const story = [
       { text: 'Steal a boat from the dock and set sail at dawn.', next: 4 },
       { text: 'Wait until nightfall to sneak out and avoid being seen.', next: 5 },
     ],
-    image: 'images/image1.png',
+    image: 'images/ch2-theCrew.webp',
   },
   { // 3
     text: 'You’re confident you can handle this on your own. With the map tucked safely in your fur, you sneak out of the house and head straight for the dock. ' +
