@@ -144,7 +144,7 @@ const story = [
     option: [
       { text: 'Enter the cave.', next: 8 },
     ],
-    image: 'images/image14.png',
+    image: 'images/ch15-beachChest.webp',
   },
   { // 16
     text: 'You pull the lever, and a hidden door slides open, revealing a secret passage. You and your crew carefully enter the passage, wondering what lies ahead.',
