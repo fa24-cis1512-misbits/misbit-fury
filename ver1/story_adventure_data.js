@@ -127,7 +127,7 @@ const story = [
       { text: 'Face the ghost and claim the treasure.', next: 17 },
       { text: 'Try to escape with as much treasure as you can carry.', next: 18 },
     ],
-    image: 'images/image12.png',
+    image: 'images/ch13-blackpawEmerges.webp',
   },
   { // 14
     text: 'Ignoring the puzzle, you and your crew try to force the door open. But as soon as you touch the door, a hidden trap is triggered. ' +
