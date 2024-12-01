@@ -188,7 +188,7 @@ const story = [
     option: [
       { text: 'Claim the treasure.', next: 20 },
     ],
-    image: 'images/image20.png',
+    image: 'images/ch21-spiderFight.webp',
   },
   { // 22
     text: 'Using your stealth skills, you and your crew sneak past the giant spider and manage to escape with as much treasure as you can carry. It’s a thrilling success!',
