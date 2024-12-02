@@ -7,7 +7,9 @@ import {cycleOptions, handleOptionSelection, selectedOptionIndex} from './storyb
      const optionAButtonEl = document.querySelector('.button-a');
      const optionBButtonEl = document.querySelector('.button-b');
 
-     selectButtonEl?.addEventListener('click', cycleOptions);
+     selectButtonEl?.addEventListener('click', () => {
+       cycleOptions();
+     });
      selectButtonEl?.addEventListener('touchstart', (event) => {
        event.preventDefault();
        cycleOptions();
