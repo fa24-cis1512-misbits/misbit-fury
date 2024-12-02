@@ -63,7 +63,7 @@ export const story = [
         {text: 'Steal a boat from the dock and set sail at dawn.', next: 4},
         {text: 'Wait until nightfall to sneak out and avoid being seen.', next: 5,},
       ],
-      IMAGE_PATHS.lighthouse,
+      IMAGE_PATHS.theCrew,
   ),
 
   createStoryStep(
@@ -73,7 +73,7 @@ export const story = [
         {text: 'You make it to Bloodstone Island, but you’re exhausted', next: 6,},
         {text: 'A sudden storm hits, and you’re thrown off course', next: 7},
       ],
-      IMAGE_PATHS.setSail,
+      IMAGE_PATHS.goAlone,
   ),
 
   createStoryStep(
@@ -229,7 +229,7 @@ export const story = [
       [
         {text: 'Play again?', next: 0},
       ],
-      IMAGE_PATHS.fightBlackPaw,
+      IMAGE_PATHS.herosReturn,
   ),
 
   createStoryStep(

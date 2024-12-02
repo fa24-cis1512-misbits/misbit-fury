@@ -24,7 +24,7 @@ body {
 
 .controller-cord {
     position: absolute;
-    top: -100px;
+    top: -50px;
     left: 50%;
     transform: translateX(-50%);
     width: 10px;
@@ -170,4 +170,9 @@ body {
     height: 50px;
     margin: 5px;
     cursor: pointer;
+}
+
+.highlighted {
+    border: 3px solid #ff0;  /* Yellow border for highlight */
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Glowing effect */
 }

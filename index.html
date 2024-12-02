@@ -11,7 +11,7 @@
 <!-- Game Container -->
 <div class="game-container">
     <!-- Story Window -->
-    <div class="story-window">
+    <div class="story-window window">
         <h1>Scenario</h1>
         <div id="storyboard"></div>
     </div>
@@ -22,16 +22,16 @@
         <div class="window" id="options-window">
             <h1>What Would You Like to Do?</h1>
             <div id="options">
-                <button id="optionA" class="option-button" style="display:none;"></button>
-                <button id="optionB" class="option-button" style="display:none;"></button>
+                <button id="optionA" class="option-button"></button>
+                <button id="optionB" class="option-button"></button>
             </div>
         </div>
     </div>
 </div>
 <!-- Controller Window -->
 <div id="controller-content"></div>
-
-<script type="module" src="js/game_logic.js"></script>
+<script type="module" src = "js/storyboard.js"></script>
+<script type="module" src = "js/controllerSetup.js" ></script >
 <script>
     fetch('nintendo_nes_controller.html')
     .then(response => response.text())
@@ -40,5 +40,6 @@
     })
      .catch(error => console.error('Error loading HTML:', error));
 </script>
+
 </body>
 </html>
