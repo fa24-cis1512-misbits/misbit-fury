@@ -29,17 +29,24 @@
     </div>
 </div>
 <!-- Controller Window -->
-<div id="controller-content"></div>
+
+<div w3-include-html="nintendo_nes_controller.html"></div>
+<!--<div id="controller-content"></div>-->
+<script src = "js/htmlInclude.js" ></script >
+
 <script type="module" src = "js/controllerSetup.js" ></script >
 <script type="module" src = "js/storyboard.js"></script>
 <script>
-    fetch('nintendo_nes_controller.html')
-    .then(response => response.text())
-     .then(data => {
-        document.getElementById('controller-content').innerHTML = data;
-    })
-     .catch(error => console.error('Error loading HTML:', error));
+    includeHTML();
 </script>
+<!--<script>-->
+<!--    fetch('nintendo_nes_controller.html')-->
+<!--    .then(response => response.text())-->
+<!--     .then(data => {-->
+<!--        document.getElementById('controller-content').innerHTML = data;-->
+<!--    })-->
+<!--     .catch(error => console.error('Error loading HTML:', error));-->
+<!--</script>-->
 
 </body>
 </html>
