@@ -8,21 +8,31 @@ import {cycleOptions, handleOptionSelection, selectedOptionIndex} from './storyb
      const optionBButtonEl = document.querySelector('.button-b');
 
      selectButtonEl?.addEventListener('click', () => {
+       console.log("Select button clicked");
        cycleOptions();
      });
      selectButtonEl?.addEventListener('touchstart', (event) => {
+       console.log("Select button touched");
        event.preventDefault();
        cycleOptions();
      });
 
-     startButtonEl?.addEventListener('click', () => handleOptionSelection(selectedOptionIndex));
+     startButtonEl?.addEventListener('click', () =>
+     {console.log("Start button clicked");
+       handleOptionSelection(selectedOptionIndex)});
      startButtonEl?.addEventListener('touchstart', (event) => {
+       console.log("Select button touched");
        event.preventDefault();
        handleOptionSelection(selectedOptionIndex);
      });
 
-     optionAButtonEl?.addEventListener('click', () => handleOptionSelection(0));
-     optionBButtonEl?.addEventListener('click', () => handleOptionSelection(1));
+     optionAButtonEl?.addEventListener('click', () => {
+       console.log("A button clicked");
+       handleOptionSelection(0)});
+     optionBButtonEl?.addEventListener('click', () => {
+       console.log("B button clicked");
+       handleOptionSelection(1)
+     });
 
      // Keyboard controls
      document.addEventListener('keydown', (event) => {
