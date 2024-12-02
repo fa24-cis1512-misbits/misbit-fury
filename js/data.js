@@ -20,7 +20,7 @@ const IMAGE_PATHS = {
   fightBlackPaw: 'images/ch17-fightBlackPaw',
   runForLife: 'images/ch18-runForLife.webp',
   theSpider: 'images/ch19-theSpider.webp',
-  herosReturn: 'images/ch20-heroRun.webp',
+  heroReturn: 'images/ch20-heroReturn.webp',
   spiderFight: 'images/ch21-spiderFight.webp',
   spiderSneak: 'images/ch22-spiderSneak.webp'
 };
@@ -229,7 +229,7 @@ export const story = [
       [
         {text: 'Play again?', next: 0},
       ],
-      IMAGE_PATHS.herosReturn,
+      IMAGE_PATHS.heroReturn,
   ),
 
   createStoryStep(
