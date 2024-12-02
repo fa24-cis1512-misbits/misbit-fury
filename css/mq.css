@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+    .game-container {
+        max-width: 700px;
+    }
+
+    .options-controls {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .controller {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #storyboard {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+}
+

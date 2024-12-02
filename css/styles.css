@@ -1,8 +1,8 @@
-@import url(story_controller_styles.css);
+@import url(mq.css);
 
 body {
     font-family: "Arial", sans-serif;
-    background-color: #0c3d52; /* Deep Ocean Blue */
+    background-color: #0c3d52;
     color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -12,11 +12,14 @@ body {
     min-height: 100vh;
     flex-direction: column;
     text-align: center;
+    background-size: cover; /* Enables background image covering */
+    background-position: center; /* Center the background image */
+    transition: background-image 1s ease-in-out; /* Smooth transition */
 }
 
 .game-container {
     width: 100%;
-    max-width: 450px;
+    /*max-width: 450px;*/
     margin: 20px;
     padding: 20px;
     background-color: #2e2e2e; /* Stormy Grey */
@@ -24,7 +27,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     gap: 20px;
 }
 
@@ -65,7 +68,7 @@ button {
     border: 2px solid #8b4513; /* Dark Ship Brown */
     padding: 10px;
     cursor: pointer;
-    border-radius: 360px;
+    /*border-radius: 360px;*/
     font-size: 1em;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -78,34 +81,6 @@ button:hover {
 
 button:active {
     transform: scale(0.95);
-}
-
-@media (min-width: 768px) {
-    .game-container {
-        max-width: 700px;
-    }
-
-    .options-controls {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .controller {
-        flex-direction: row;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    #storyboard {
-        font-size: 1.2em;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 1.1em;
-    }
 }
 
 .story-window {
